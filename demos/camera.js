@@ -439,6 +439,7 @@ function detectPoseInRealTime(video, net) {
         poses.forEach(({score, keypoints}) => {
             if (score >= minPoseConfidence) {
                 if (guiState.output.showPoints) {
+                    console.log(keypoints);
                     drawKeypoints(keypoints, minPartConfidence, ctx);
                 }
                 if (guiState.output.showSkeleton) {

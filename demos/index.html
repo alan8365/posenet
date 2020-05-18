@@ -2,6 +2,14 @@
 <html>
 <head>
     <title>PoseNet Demos</title>
+    <style>
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 80vh;
+            width: 80vw;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,7 +20,12 @@
     <li><a href='coco.html'>Pose Estimation - Image demo</a></li>
 </ul>
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<button id="add">add</button>
+<button id="remove">remove</button>
+
+<div class="chart-container" style="position: relative;">
+    <canvas id="myChart"></canvas>
+</div>
 
 <script src="show_chart.js"></script>
 
